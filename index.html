@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Főoldal</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <!-- a navbar-expand-lg helyett az ls helyett xl-t is tehetünk és akkor nem 992, hanem 1200 px-től ugrik át a monitor nézetbe, stb. -->
+        <a class="navbar-brand" href="/index.html">Learning360</a>
+        <!-- általában a cég neve vagy logója, ez szinte mindig a főoldalra visz vissza -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">Főoldal <span class="sr-only">(jelenlegi)</span></a>
+                    <!-- sr-only után ami a zárójelben van, az a hangosfelolvasóknak kell -->
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="tanfolyamokDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tanfolyamok
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="tanfolyamokDropdown">
+                        <a class="dropdown-item" href="/tanfolyamlista.html">Tanfolyamlista</a>
+                        <a class="dropdown-item" href="/elofizetesek.html">Előfizetések</a>
+                        <a class="dropdown-item" href="/oktatok.html">Oktatók</a>
+                        <!-- <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Oktatók</a> -->
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/gyik.html">GYIK</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/kapcsolat.html">Kapcsolat</a>
+                </li>
+
+                <!--  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li> -->
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+        </div>
+    </nav>
+
+    <header>
+        <!--  a lapozo rész fent, carousel a neve a slidernek -->
+        <div id="indexCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/index-carousel/tankonyvek.jpg" class="d-block w-100" alt="Tankönyvek">
+                    <div class="carousel-caption d-none d-md-block bg-dark p-4">
+                        <!-- d-none = nincs tartalom alap nézetben, azaz mobilon, de a médium törésponttól igen, block szinten (d-md-block) -->
+                        <h5>Tankönyvek</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quae rem quas at corporis
+                            impedit nostrum asperiores similique eaque unde perspiciatis illum quia suscipit optio
+                            beatae soluta voluptatum, qui laboriosam?</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/index-carousel/e-learning.jpg" class="d-block w-100" alt="E-learning">
+                    <div class="carousel-caption d-none d-md-block bg-dark p-4">
+                        <h5>E-learning</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ex porro eligendi voluptates
+                            amet excepturi soluta, laudantium exercitationem molestias perferendis placeat corporis,
+                            possimus voluptatem minus assumenda quibusdam delectus officia labore.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/index-carousel/jegyzetek.jpg" class="d-block w-100" alt="Jegyzetek">
+                    <div class="carousel-caption d-none d-md-block bg-dark p-4">
+                        <h5>E-learning</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptatem accusantium eveniet
+                            deserunt eum. Molestiae dolore sequi atque mollitia, adipisci nemo in tempore corrupti
+                            similique odio et molestias qui ea?</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Előző</span> <!-- csak a hangosolvasók érzékelik -->
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Következő</span>
+            </a>
+        </div>
+
+    </header>
+
+
+
+    <!-- b4-navb -->
+    <!-- így használjuk a VSCode telepített Bootsrap 4 csomagját, hogy gyorsan sablonokat használjunk, itt pl navbart -->
+
+
+
+    <!-- <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">Action 1</a>
+                        <a class="dropdown-item" href="#">Action 2</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav> -->
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $('#indexCarousel').carousel({          /* Ez olyan mint a document.querySelector... */
+            interval: 3000
+        })
+    </script>
+</body>
+
+</html>
