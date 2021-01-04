@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<title>Grid</title>
+<style>
+    .col {
+        border: 1px solid red;
+    }
+</style>
+
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <!-- a tartalom a teljes szélességben töltse ki a helyet, minden kijelzőn, ehhez kell a fluid, nélküle van egy alap padding és border -->
+
+        <div class="row">
+            <!-- 90%-ban így fog felépülni egy oldalunk, hogy container -> row -> col       !!!-->
+            <div class="col">
+                Content
+            </div>
+            <div class="col">
+                Content
+            </div>
+            <div class="col">
+                Content
+                <!-- a 3 elem flexboxal van szétosztva a bottstrapnél, tehát végig tartják jelen esetben az 1/3 1/3 1/3 arányokat -->
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
