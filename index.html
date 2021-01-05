@@ -343,7 +343,7 @@
     <footer class="py-4 text-white text-center text-md-left bg-dark">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 mb-4 mb-md-0">
                     <h5 class="mb-4">Navigáció</h5>
                     <nav class="nav flex-column">
                         <!-- a class="nav" is egy bootsrap -->
@@ -356,8 +356,41 @@
                         <a class="text-white" href="./kapcsolat.html">Kapcsolat</a>
                     </nav>
                 </div>
-                <div class="col-md-4"></div>
-                <div class="col-md-4"></div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-4">Legfrissebb bejegyzések</h5>
+                    <nav class="nav flex-column">
+                        <!-- a class="nav" is egy bootsrap -->
+                        <a class="text-white mb-2" href="#">Lorem ipsum</a>
+                        <a class="text-white mb-2" href="#">Lorem ipsum</a>
+                        <a class="text-white mb-2" href="#">Lorem ipsum</a>
+                        <a class="text-white mb-2" href="#">Lorem ipsum</a>
+                        <a class="text-white mb-2" href="#">Lorem ipsum</a>
+                    </nav>
+                </div>
+                <div class="col-md-4">
+                    <address>
+                        Learning Kft. <br>
+                        1234 Oktatás utca 56.
+                    </address>
+                    <nav class="nav justify-content-center justify-content-md-start">
+                        <!-- justify content center, majd flex start -->
+                        <a href="#" class="text-white mr-2" data-toggle="tooltip" data-placement="top" title="Facebook">
+                            <i class="fab fa-facebook-square fa-3x" aria-hidden="true"></i>
+                            <span class="sr-only">Link a cég Facebook oldalára</span>
+                            <!-- sr-only, csak a hangos felolvasó szoftverek (screen reader) fogják érzékelni ezt a tartalmat, vizuálisan nem -->
+                        </a>
+                        <a href="#" class="text-white mr-2" data-toggle="tooltip" data-placement="top" title="Twitter">
+                            <i class="fab fa-twitter-square fa-3x" aria-hidden="true"></i>
+                            <span class="sr-only">Link a cég Twitter oldalára</span>
+                            <!-- sr-only, csak a hangos felolvasó szoftverek (screen reader) fogják érzékelni ezt a tartalmat, vizuálisan nem -->
+                        </a>
+                        <a href="#" class="text-white" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                            <i class="fab fa-linkedin fa-3x" aria-hidden="true"></i>
+                            <span class="sr-only">Link a cég Linkedin oldalára</span>
+                            <!-- sr-only, csak a hangos felolvasó szoftverek (screen reader) fogják érzékelni ezt a tartalmat, vizuálisan nem -->
+                        </a>
+                    </nav>
+                </div>
             </div>
         </div>
 
@@ -407,6 +440,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+    <script src="./js/main.js"></script>
 
     <script>
         $('#indexCarousel').carousel({          /* Ez olyan mint a document.querySelector... */
