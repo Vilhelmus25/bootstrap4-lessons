@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Grid</title>
+    <style>
+        [class^="col"] {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <!--  .col-12.col-md-6.col-xl-3{Content}*4 -->
+            <!-- Ha kitörlöm a col-12-őket, akkor azzal nem csinálok semmi rosszat, mert az 100%-os méret minden esetben -->
+            <!-- Kitörölhetjük a col12-ket ,ha van más számos col prefix méretezés -->
+            <div class="col-md-6 col-xl-3">Content</div>
+            <div class="col-md-6 col-xl-3">
+                <div class="row">
+                    <!-- .col-6.col-md-3{Embed}*4 -->
+                    <div class="col-6 col-md-3">Embed</div>
+                    <div class="col-6 col-md-3">Embed</div>
+                    <div class="col-6 col-md-3">Embed</div>
+                    <div class="col-6 col-md-3">Embed</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">Content</div>
+            <div class="col-md-6 col-xl-3">Content</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

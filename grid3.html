@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Grid</title>
+    <style>
+        [class^="col"] {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">Content</div>
+            <div class="col-lg-6">Content</div>
+            <div class="col">Content</div>
+            <!-- A két szélső elem a maradék helyet kapja meg fele-fele arányban -->
+            <!-- <div class="col-lg-2">Content</div> -->
+            <!-- Ez már ha kifér mellé teszi és elcsúfítja, ha nem fér ki akkor jó, de ezt el kell kerülni erre kell az új row-->
+
+        </div>
+        <div class="row">
+            <div class="col-lg-2">Content</div>
+            <div class="col-lg-10">Content</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

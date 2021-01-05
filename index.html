@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
+    <script src="https://kit.fontawesome.com/7b1892df42.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -114,8 +114,254 @@
 
     </header>
 
+    <main>
+        <section class="py-5">
+            <!-- py = alul és felül padding -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="media">
+                            <i class="fas fa-address-card fa-2x fa-fw mr-3" aria-hidden="true"></i>
+                            <!-- fa-2x = 2-szeres méret; fa-fw = fixed-width; mr-3 = margin-right 1rem-es-->
+                            <!-- aria-hidden = ne lehessen felolvasni -->
+                            <div class="media-body">
+                                <h5 class="mt-0">Jegyzetek</h5>
+                                <p>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                    sollicitudin.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="media">
+                            <i class="fas fa-user-graduate fa-2x fa-fw mr-3" aria-hidden="true"></i>
+                            <!-- fa-2x = 2-szeres méret; fa-fw = fixed-width; mr-3 = margin-right 1rem-es-->
+                            <!-- aria-hidden = ne lehessen felolvasni -->
+                            <div class="media-body">
+                                <h5 class="mt-0">Vizsgák</h5>
+                                <p>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                    sollicitudin.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="media">
+                            <i class="fas fa-laptop-code fa-2x fa-fw mr-3" aria-hidden="true"></i>
+                            <!-- fa-2x = 2-szeres méret; fa-fw = fixed-width; mr-3 = margin-right 1rem-es-->
+                            <!-- aria-hidden = ne lehessen felolvasni -->
+                            <div class="media-body">
+                                <h5 class="mt-0">Technikai feltételek</h5>
+                                <p>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                    sollicitudin.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-center mb-5">Legfrissebb bejegyzések</h1>
+                        <!-- mb-5 = margin-bottom 5 (a legnagyobb) -->
+                    </div>
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <!-- Csak ide tesszünk margót, mert a legalsóra nem kell -->
+                        <div class="row">
+                            <div class="col-sm-6 mb-4 mb-sm-0">
+                                <img src="./img/blog/javascript-e2e-teszteles.jpg" alt="Javascript e2e tesztelés"
+                                    class="w-100"><!-- w-100  =  a rendelkezésre álló szabad hely 100%-át kitölti -->
+                            </div>
+                            <div class="col-sm-6">
+                                <article>
+                                    <header>
+                                        <h1 class="h3">Javascript e2e tesztelés</h1>
+                                        <!-- a class nagyobb prioritású, mint a tag, ezért ha így adom meg h1-ből h3-ast csinál -->
+                                    </header>
+
+                                    <section>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </section>
+
+                                    <footer>
+                                        <a href="" class="btn btn-primary">Tovább a bejegyzéshez</a>
+                                    </footer>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-sm-6 mb-4 mb-sm-0">
+                                <img src="./img/blog/tokeletes-munkahely.jpg" alt="Tökéletes munkahely" class="w-100">
+                                <!-- w-100  =  a rendelkezésre álló szabad hely 100%-át kitölti -->
+                            </div>
+                            <div class="col-sm-6">
+                                <article>
+                                    <header>
+                                        <h1 class="h3">Tökéletes munkahely</h1>
+                                        <!-- a class nagyobb prioritású, mint a tag, ezért ha így adom meg h1-ből h3-ast csinál -->
+                                    </header>
+
+                                    <section>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </section>
+
+                                    <footer>
+                                        <a href="" class="btn btn-primary">Tovább a bejegyzéshez</a>
+                                    </footer>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="py-5">
+            <div class="container-fluid">
+                <!-- container fluiddal már kiteszi a szélére a kártyát (100% helyet kiasználja) -->
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-center mb-5">Tanfolyamok</h1>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xl-2 mb-4 mb-xl-0">
+                        <div class="card h-100">
+                            <img src="./img/kurzusok/matematika.jpg" class="card-img-top" alt="Matematika">
+                            <div class="card-body d-flex flex-column bg-light">
+                                <h5 class="card-title">Matematika</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Kártya alcíme</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="card-link mt-auto">Kártya link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xl-2 mb-4 mb-xl-0">
+                        <div class="card h-100">
+                            <img src="./img/kurzusok/prezentacio-technika.jpg" class="card-img-top"
+                                alt="Prezentacio-technika">
+                            <div class="card-body d-flex flex-column bg-light">
+                                <h5 class="card-title">Prezentacio-technika</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Kártya alcíme</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="card-link mt-auto">Kártya link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xl-2 mb-4 mb-xl-0">
+                        <div class="card h-100">
+                            <img src="./img/kurzusok/projektmenedzsment.jpg" class="card-img-top"
+                                alt="Projektmenedzsment">
+                            <div class="card-body d-flex flex-column bg-light">
+                                <h5 class="card-title">Projektmenedzsment</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Kártya alcíme</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="card-link mt-auto">Kártya link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xl-2 mb-4 mb-lg-0">
+                        <div class="card h-100">
+                            <img src="./img/kurzusok/scrum-master.jpg" class="card-img-top" alt="Scrum-master">
+                            <div class="card-body d-flex flex-column bg-light">
+                                <h5 class="card-title">Scrum master
+                                    <span class="badge badge-danger">Új</span>
+                                </h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Kártya alcíme</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="card-link mt-auto">Kártya link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xl-2 mb-4 mb-sm-0">
+                        <div class="card h-100">
+                            <img src="./img/kurzusok/sitebuilding.jpg" class="card-img-top" alt="Sitebuilding">
+                            <div class="card-body d-flex flex-column bg-light">
+                                <h5 class="card-title">Sitebuilding</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Kártya alcíme</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="card-link mt-auto">Kártya link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xl-2">
+                        <div class="card h-100">
+                            <img src="./img/kurzusok/uzleti-strategiak.jpg" class="card-img-top"
+                                alt="Üzleti stratégiák">
+                            <div class="card-body d-flex flex-column bg-light">
+                                <!-- flex, alapból row, ezért kell a flex-column, így egymás alá teszi az elemeket -->
+                                <h5 class="card-title">Üzleti stratégiák</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Kártya alcíme</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="card-link mt-auto">Kártya link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
 
 
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-center mb-5">Rólunk mondták</h1>
+                        <blockquote class="blockquote text-center">
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                                erat a ante.</p>
+                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source
+                                    Title</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="py-4 text-white text-center text-md-left bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="mb-4">Navigáció</h5>
+                    <nav class="nav flex-column">
+                        <!-- a class="nav" is egy bootsrap -->
+                        <a class="text-white mb-2" href="./index.html">Főoldal</a>
+                        <a class="text-white mb-2" href="./blog.html">Blog</a>
+                        <a class="text-white mb-2" href="./tanfolyamlista.html">Tanfolyamlista</a>
+                        <a class="text-white mb-2" href="./elofizetesek.html">Előfizetések</a>
+                        <a class="text-white mb-2" href="./oktatok.html">Oktatók</a>
+                        <a class="text-white mb-2" href="./gyik.html">Kérdések és válaszok</a>
+                        <a class="text-white" href="./kapcsolat.html">Kapcsolat</a>
+                    </nav>
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+
+    </footer>
     <!-- b4-navb -->
     <!-- így használjuk a VSCode telepített Bootsrap 4 csomagját, hogy gyorsan sablonokat használjunk, itt pl navbart -->
 

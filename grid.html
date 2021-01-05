@@ -9,7 +9,7 @@
 
 <title>Grid</title>
 <style>
-    .col {
+    [class^="col"] {
         border: 1px solid red;
     }
 </style>
@@ -24,13 +24,95 @@
 
         <div class="row">
             <!-- 90%-ban így fog felépülni egy oldalunk, hogy container -> row -> col       !!!-->
-            <div class="col">
+            <div class="col-md-3">
                 Content
             </div>
-            <div class="col">
+            <div class="col-md-6">
+                <!-- md-7 -ben már elcsúszik, mert a 3 összege nagyobb mint 12 (3+7+3 = 13) -->
                 Content
             </div>
-            <div class="col">
+            <div class="col-md-3">
+                Content
+                <!-- a 3 elem flexboxal van szétosztva a bottstrapnél, tehát végig tartják jelen esetben az 1/3 1/3 1/3 arányokat -->
+            </div>
+            <div class="col-md-3">
+                Content
+            </div>
+            <div class="col-md-6">
+                <!-- md-7 -ben már elcsúszik, mert a 3 összege nagyobb mint 12 (3+7+3 = 13) -->
+                Content
+            </div>
+            <div class="col-md-3">
+                Content
+                <!-- a 3 elem flexboxal van szétosztva a bottstrapnél, tehát végig tartják jelen esetben az 1/3 1/3 1/3 arányokat -->
+            </div>
+            <div class="col-md-4">
+                Content
+            </div>
+            <div class="col-md-4">
+                <!-- md-7 -ben már elcsúszik, mert a 3 összege nagyobb mint 12 (3+7+3 = 13) -->
+                Content
+            </div>
+            <div class="col-md-4">
+                Content
+            </div>
+            <!-- a 3 elem flexboxal van szétosztva a bottstrapnél, tehát végig tartják jelen esetben az 1/3 1/3 1/3 arányokat -->
+            <div class="col-md-4">
+                Content
+            </div>
+            <div class="col-md-4">
+                <!-- md-7 -ben már elcsúszik, mert a 3 összege nagyobb mint 12 (3+7+3 = 13) -->
+                Content
+            </div>
+            <div class="col-md-4">
+                Content
+                <!-- a 3 elem flexboxal van szétosztva a bottstrapnél, tehát végig tartják jelen esetben az 1/3 1/3 1/3 arányokat -->
+            </div>
+            <div class="col-md-12">
+                Content
+            </div>
+
+            <div class="col-md-1">
+                Content
+            </div>
+            <div class="col-md-1">
+                <!-- md-7 -ben már elcsúszik, mert a 3 összege nagyobb mint 12 (3+7+3 = 13) -->
+                Content
+            </div>
+            <div class="col-md-1">
+                Content
+                <!-- a 3 elem flexboxal van szétosztva a bottstrapnél, tehát végig tartják jelen esetben az 1/3 1/3 1/3 arányokat -->
+            </div>
+            <div class="col-md-1">
+                Content
+            </div>
+            <div class="col-md-1">
+                <!-- md-7 -ben már elcsúszik, mert a 3 összege nagyobb mint 12 (3+7+3 = 13) -->
+                Content
+            </div>
+            <div class="col-md-1">
+                Content
+                <!-- a 3 elem flexboxal van szétosztva a bottstrapnél, tehát végig tartják jelen esetben az 1/3 1/3 1/3 arányokat -->
+            </div>
+            <div class="col-md-1">
+                Content
+            </div>
+            <div class="col-md-1">
+                <!-- md-7 -ben már elcsúszik, mert a 3 összege nagyobb mint 12 (3+7+3 = 13) -->
+                Content
+            </div>
+            <div class="col-md-1">
+                Content
+                <!-- a 3 elem flexboxal van szétosztva a bottstrapnél, tehát végig tartják jelen esetben az 1/3 1/3 1/3 arányokat -->
+            </div>
+            <div class="col-md-1">
+                Content
+            </div>
+            <div class="col-md-1">
+                <!-- md-7 -ben már elcsúszik, mert a 3 összege nagyobb mint 12 (3+7+3 = 13) -->
+                Content
+            </div>
+            <div class="col-md-1">
                 Content
                 <!-- a 3 elem flexboxal van szétosztva a bottstrapnél, tehát végig tartják jelen esetben az 1/3 1/3 1/3 arányokat -->
             </div>
