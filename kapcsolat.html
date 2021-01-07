@@ -66,6 +66,52 @@
         </div>
     </nav>
 
+    <main>
+        <section class="py-5">
+            <div class="container">
+                <h1 class="mb-5 text-center">Kapcsolat</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="email" class="font-weight-bold">Email cím:</label>
+                                <input type="email" name="email" id="email" class="form-control"
+                                    placeholder="Email cím:" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="name" class="font-weight-bold">Név</label>
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Név"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="font-weight-bold">Üzenet</label>
+                                <textarea name="message" id="message" rows="5" class="form-control" required
+                                    placeholder="Üzenet"></textarea>
+                            </div>
+                            <div class="input-group mb-3">
+                                <select name="topic" id="topic" class="form-control" required>
+                                    <option value="technikai">technikai</option>
+                                    <option value="számlázási">számlázási</option>
+                                    <option value="egyéb">egyéb</option>
+                                </select>
+                                <div class="input-group-append">
+                                    <label class="input-group-text" for="topic">kérdés</label>
+                                </div>
+                            </div>
+                            <div class="form-check mb-4">
+                                <input type="checkbox" name="newsletter" id="newsletter" class="form-check-input"
+                                    checked>
+                                <label for="newsletter" class="font-weight-bold form-check-label">Feliratkozom a
+                                    hírlevélre</label>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-lg">Küldés</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="py-4 text-white text-center text-md-left bg-dark mt-auto">
         <div class="container">
