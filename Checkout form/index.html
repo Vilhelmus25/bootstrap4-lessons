@@ -18,48 +18,248 @@
 <body class="bg-light">
 
     <main>
-        <section class="py-3 ">
+        <section class="py-1 ">
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-4">
+                <div class="row d-flex flex-row-reverse">
+
+                    <div class="col-12 col-sm-4">
                         <ul class="list-group ">
-                            <li class="list-group-item d-flex justify-content-between align-items-center border-0 ">
-                                Your cart
-                                <span class="badge badge-secondary badge-pill">14</span>
+                            <li
+                                class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 bg-light h3">
+                                <small class="text-muted h3">Your cart</small>
+                                <span class="badge badge-secondary badge-pill">3</span>
                             </li>
                         </ul>
                         <ul class="list-group d-flex flex-column">
                             <li class="list-group-item  justify-content-between align-items-center">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h5 class="mb-1">Product name</h5>
-                                    <small>$12</small>
+                                    <small class="h6 text-muted">$12</small>
                                 </div>
                                 <small>Brief description</small>
                             </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Dapibus ac facilisis in
-                                <span class="badge badge-pill">$8</span>
+                            <li class="list-group-item  justify-content-between align-items-center">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Second item</h5>
+                                    <small class="h6 text-muted">$8</small>
+                                </div>
+                                <small>Brief description</small>
                             </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Morbi leo risus
-                                <span class="badge badge-pill">$5</span>
+                            <li class="list-group-item  justify-content-between align-items-center">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Third item</h5>
+                                    <small class="h6 text-muted">$5</small>
+                                </div>
+                                <small>Brief description</small>
                             </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Promo code
-                                <span class="badge badge-pill">-$5</span>
+                            <li class="list-group-item  justify-content-between align-items-center bg-light">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1 text-success">Promo code</h5>
+                                    <small class="text-success h6">-$5</small>
+                                </div>
+                                <small class="text-success">EXAMPLECODE</small>
                             </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Total (USD)
-                                <span class="badge badge-pill">$20</span>
+                            <li class="list-group-item  justify-content-between align-items-center">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Total (USD)</h5>
+                                    <small class="h6 font-weight-bold">$20</small>
+                                </div>
                             </li>
                         </ul>
 
+                        <ul class="list-group d-flex flex-column"></ul>
+                        <li class="list-group-item justify-content-between align-items-center bg-light border-0">
+                        </li>
+                        </ul>
 
+                        <ul class="list-group d-flex flex-column">
+                            <li class="list-group-item p-2 ">
+                                <form action="">
+                                    <div class="input-group">
+                                        <input type="text" name="name" id="name" class="form-control"
+                                            placeholder="Promo code" required>
+                                        <div class="input-group-append">
+                                            <button type="submit" class="btn btn-secondary">Redeem</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
 
                     </div>
-                    <div class="col-sm-12 col-md-8">
+
+                    <div class="col-12 col-sm-8 mt-4">
+                        <table class="table">
+
+                            <h2>Billing address</h2>
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group mx-auto col-md-6 ">
+                                        <label for="fName" class="">First name</label>
+                                        <input type="text" name="fName" id="fName" class="form-control" required>
+                                    </div>
+                                    <div class="form-group mx-auto col-md-6">
+                                        <label for="lName" class="">Last name</label>
+                                        <input type="text" name="lName" id="lName" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+
+                                    <label for="fName" class="">Username</label>
+                                    <div class="input-group">
+
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">@</span>
+                                        </div>
+                                        <input type="text" class="form-control rounded-right" required
+                                            placeholder="Username">
+                                        <div class="invalid-feedback">
+                                            Please choose a username.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class=" form-group ">
+                                    <div class="form-row">
+                                        <label for="inputEmail" class="pl-1">Email</label>
+                                        <label class="text-muted px-1">(Optional)</label>
+                                    </div>
+
+                                    <input type="email" class="form-control" placeholder="you@example.com"
+                                        id="inputEmail">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputAddress">Address</label>
+                                    <input type="text" class="form-control" id="inputAddress"
+                                        placeholder="1234 Main St">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAddress2">Address 2</label>
+                                    <label class="text-muted">(Optional)</label>
+                                    <input type="text" class="form-control" id="inputAddress2"
+                                        placeholder="Apartment or suite">
+
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputCountry">Country</label>
+                                        <select class="custom-select mr-sm-2" id="inputCountry">
+                                            <option value=""></option>
+                                            <option value="Hungary">Magyarország</option>
+                                            <option value="United States of America">USA</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputState">State</label>
+                                        <select class="custom-select mr-sm-2" id="inputState">
+
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-2 mb-4">
+                                        <label for="inputZip">Zip</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                </div>
+
+
+                                <tbody>
+                                    <tr>
+                                        <td class="pt-4 pb-0">
+                                            <div class="form-group ">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                    <label class="form-check-label" for="gridCheck">
+                                                        Shipping address is the same as my billing address
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                    <label class="form-check-label" for="gridCheck">
+                                                        Save this information for next time
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>
+                                            <h2>Payment</h2>
+                                            <div class="custom-control custom-radio mt-3">
+                                                <input type="radio" id="radiocreditcard" name="customRadio"
+                                                    class="custom-control-input" checked>
+                                                <label class="custom-control-label" for="radiocreditcard">Credit
+                                                    card</label>
+                                            </div>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="radiodebitcard" name="customRadio"
+                                                    class="custom-control-input">
+                                                <label class="custom-control-label" for="radiodebitcard">Debit
+                                                    card</label>
+                                            </div>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="radiopaypal" name="customRadio"
+                                                    class="custom-control-input">
+                                                <label class="custom-control-label" for="radiopaypal">Paypal</label>
+                                            </div>
+
+                                            <div class="form-group mt-3">
+
+                                                <label for="nameOnCard" class="">Name on card</label>
+                                                <div class="input-group">
+
+                                                    <input type="text" class="form-control rounded-right" required>
+                                                    <div class="invalid-feedback">
+                                                        Please give your full name.
+                                                    </div>
+
+                                                </div>
+                                                <small class="text-muted">Full name as displayed on card</small>
+                                            </div>
+
+                                            <div class="form-group mt-3">
+
+                                                <label for="fName" class="">Expiration</label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control rounded-right" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group mt-3">
+
+                                                <label for="fName" class="">CVV</label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control rounded-right" required>
+                                                </div>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+
+
+                                    <tr>
+                                        <td class="pt-4">
+
+                                            <button type="submit" class="btn btn-primary btn-lg w-100">Continue to
+                                                checkout</button>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+
+                            </form>
 
                     </div>
+
 
                 </div>
             </div>
