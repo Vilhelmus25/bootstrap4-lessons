@@ -71,7 +71,7 @@
             <div class="container">
                 <h1 class="mb-5 text-center">Kapcsolat</h1>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-5 mb-md-0">
                         <form action="">
                             <div class="form-group">
                                 <label for="email" class="font-weight-bold">Email cím:</label>
@@ -105,9 +105,20 @@
                                 <label for="newsletter" class="font-weight-bold form-check-label">Feliratkozom a
                                     hírlevélre</label>
                             </div>
-                            <button type="button" class="btn btn-primary btn-lg">Küldés</button>
+                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                data-target="#sendModal">Küldés</button>
                         </form>
                     </div>
+
+                    <div class="col-md-6">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30222.27994391856!2d-69.26913697546449!3d18.763138485149987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf3f917088f2c7%3A0xc50a551e2ccaa7e1!2sHato%20Mayor%20del%20Rey%2025000%2C%20Dominikai%20K%C3%B6zt%C3%A1rsas%C3%A1g!5e0!3m2!1shu!2shu!4v1610219312288!5m2!1shu!2shu"
+                            height="450" frameborder="0" style="border:0;" aria-hidden="false" tabindex="0"
+                            class="embed-responsive"></iframe>
+                        <!-- Tehetem az embed-responsive-et a divre is (ha több iframe-em is van)
+                        Továbbá ha ez nincs, akkor nem tölti ki a rendelkezésére álló helyet az iframe-->
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -168,6 +179,27 @@
         </div>
 
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="sendModal" tabindex="-1" aria-labelledby="sendModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sendModalLabel">Üzenet</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Az üzenetet sikeresen elküldtük. 24 órán belül válaszolunk a megadott email címre.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Bezár</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- b4-navb -->
     <!-- így használjuk a VSCode telepített Bootsrap 4 csomagját, hogy gyorsan sablonokat használjunk, itt pl navbart -->
 
